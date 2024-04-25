@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Young Serif";
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5;
+}
+
+.section__padding {
+    padding: 1rem 3rem;
+}
+
+body {
+    background: hsl(30, 54%, 90%);
+}
+
+section {
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#title {
+    padding-top: 3rem;
+    border-radius: 20px 20px 0 0;
+    margin-top: 12rem;
+}
+
+#nutrition {
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 3rem;
+    margin-bottom: 12rem;
+}
+
+h1, h2 {
+    font-family: "Young Serif", sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 2rem 0 1rem 0;
+}
+
+h2 {
+    font-size: 32px;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+ol, ul {
+    list-style-position: outside;
+    max-width: 98%;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+
+li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+ol li::marker {
+    font-size: 16px;
+}
+
+.nutrition__facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.nutrition__categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.nutrition__category {
+    padding-left: 2rem;
+}
+
+.nutrition__values {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box__purple {
+    background: hsl(330, 100%, 98%);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.section__divider {
+    background: hsl(30, 18%, 87%);
+    height: 2px;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+}
+
+.fact__divider {
+    background: hsl(30, 18%, 87%);
+    height: 2px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.nutrition__category {
+    color: hsl(30, 10%, 34%);
+    font-weight: 600;
+}
+
+.nutrition__value {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    #title, #nutrition, img {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #title {
+        padding: 0 0 1rem 0;
+    }
+
+    #title h1, #title p {
+        padding: 0 3rem;
+    }
+
+    h1 {
+        line-height: 1.25;
+    }
+}
